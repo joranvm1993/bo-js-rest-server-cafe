@@ -27,6 +27,6 @@ mongoose.connect('mongodb://localhost:27017/cafe', {useNewUrlParser: true, useUn
   console.log('Base de datos ONLINE');
 });
 
-app.listen(3000, () =>{
+app.listen(process.env.PORT, () =>{
     console.log('Escuchando puerto: ', process.env.PORT);
 })
